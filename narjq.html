@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQurey Training</title>
+</head>
+<body>
+	
+	<h1>JQurey Intro</h1>
+	<p>Plane you JQurey Trainning Now </p>
+	<ul>
+		<li>Iam a list iteam in HTML</li>
+		<li>Iam also a list iteam</li>
+	</ul>
+	<a href="http://jquery.com/">jQuery</a>
+
+	<!--using div tage-->
+	<div id ="ms">
+		<ul id ="Item-list">
+			<li id ="first">
+				<a>outside</a>
+				<div id ="inside-div">inside</a></div>
+			</li>
+			<li>milk</li>
+			<li>tea</li>
+		</ul>
+		<button>click me</button>
+
+	</div>
+	<!--demo-- without Id -->
+	<div >
+		<h2>Welcome back H2</h2>
+		<!--attribte selector-->
+	<!--	
+	<a href="google.com" target="_blank">google</a>
+		<a href="google.com" target="_set">google2</a>
+		<a href="Yahoo.com" target="_self">google3</a>
+		<p>list iteams</p>
+<a href="https://google.com">outside ul tag</a>
+		<ul id ="Item-list">
+
+			<li id ="first">
+				coffe
+		<a href="https://google.com">google.com </a>
+		<div ><a href="Yahoo.com" id ="inside-div">inside</a></div>
+			</li>
+
+			<li>milk</li>
+			<li>tea</li>
+		</ul>
+		<button >click me</button>
+
+	</div>
+-->
+
+	DOM manipulation
+	<div id="container">
+
+		<p id="question">what is the capital of india </p>
+		<input type="text" id="answer-box"/>
+		<p id="result"></p>
+		<p id="answer"></p>
+		<button>Submit</button>
+
+	</div>
+	Adding removing 
+	<div class="color-box after">
+		After
+	</div>
+	<div class="color-box before">
+		Before 
+	</div>
+	<div class="color-box append">
+		Append
+	</div>
+	<div class="color-box prepend">
+		prepend 
+	</div>
+	modifying properties and Attributes :
+	<!--add calss ,id , -->
+	<a target="-_blank" id="google-link" href="https://google.com">google</a>
+	<a target="-_blank" class="color-box after" href="https://google.com">google2</a>
+	<a target="_self"  href="https://Yahoo.com">Yahoo</a>
+	<button id="linkfix">my linkfix </button> 
+
+     copying elements
+     
+     <a target="_blank" href="https://google.com" id ="master">google</a>
+     <div id="clones">
+     </div>
+     <button id="linkfix">clone my links </button>
+
+     iterating with .each()
+     <ui>
+     	<li>
+     		<a href="google.com">google</a>
+     	</li>
+     	<li class="middle">
+     		<a href="yahoo.com">Yahoo</a>
+     	</li>
+<li>
+	<a target="_self" href="amazon.com">Amazon</a></li>
+</ui>
+//.has() and .not
+ <ui>
+     	<li>
+     		<a href="google.com">google</a>
+     	</li>
+     	<li class="middle">
+     		<a href="yahoo.com">Yahoo</a>
+     	</li>
+<li>
+	<ul>
+		<li>amazon.com</li>
+		<li>amazon.fo</li>
+		<li>amzon.li</li>
+	</ul>
+	</li>
+	</ul>
+</li>
+</ui>
+jqurey Data APIs 
+<button id="btn1"> Attach data to div element</button>
+<br>
+<button id="btn2"> Get data to div element</button>
+<div id ="dataelement"></div>
+JQurey Effects 
+<div class="container">
+	<div class="color-box after">
+		After
+	</div>
+	<div class="color-box before">
+		Before 
+	</div>
+	<div class="color-box append">
+		Append
+	</div>
+	<div class="color-box prepend">
+		prepend 
+	</div>
+	<br/>
+	<br/>
+	<!-- same as working also fading $ sliding methods:-->
+	<button id="showbox"> showboxs</button><br/><br/>
+	<button id="hidebox">hideboxs</button>
+
+	.toggle()
+
+	<button id="togglebox">toggleboxs</button><br/>
+	animate
+	<button id="animatebox">Animate</button>
+</div>
+<br>
+//Jqurey form validation 
+<form>
+	Name:<input type="text" name=""/><br>
+	EmailId<input type="text" name=""/><br>
+	password<input type="password" name=""/><br>
+<input type="radio" name="">
+<input type="radio" name=""><br>
+blank<input type="textarea" name=""><br>
+<input type="checkbox" name=""><br>	
+<select>
+	<option>cm</option>
+	<option>mc</option>
+</select>
+</form>
+Event HAndling
+<di>
+	
+	<p style="border: 1px solid black; padding:20px;" id="bind-exp" >click</p>
+</di>
+//jqurey on()& off()
+<div id="colorbox" style="width: 300px; height: 300px; background-color: red ; border: 1pz solid black;">
+	<span style="color: white; font-size: 16px" id="message">
+		
+	</span>
+	
+</div>
+/.preventDefault()
+<div>
+	<a id ="target-link" href="https://google.com" target="_blank">google5</a>
+</div>
+// ajax 
+<button id="btn3"> ajax submit</button>
+<!--JQurey Effects -->
+<style type="text/css">
+	#explanation{
+		width: 100px;
+		height: 40px;
+		cursor: pointer;
+		border: 1px solid black;
+	}
+	.container{
+
+	}
+	.color-box{
+		width: 250px;
+		height: 250px;
+		border: 1px solid black;
+		margin: 2px;
+		display: inline-block;;
+
+	}
+	.after{
+		background-color: red;
+	}
+	.before{
+		background-color: blue;
+	}
+	.append{
+		background-color: green;
+
+	}
+	.prepend{
+		background-color: cyan;
+	}
+	.attached{
+		background-color: gold;
+		display: inline-block;
+	}
+	}
+</style>
+	<!--DOM manipulation-->
+	<style type="text/css">
+		.selected{
+			text-decoration:underLine;
+			.golden-lin{
+				color: gold;
+			}
+		}
+	</style>
+<!--Adding removing  style-->
+<style type="text/css">
+	#explanation{
+		width: 100px;
+		height: 40px;
+		cursor: pointer;
+		border: 1px solid black;
+	}
+	.color-box{
+		width: 250px;
+		height: 250px;
+		border: 1px solid black;
+		margin: 2px;
+
+	}
+	.after{
+		background-color: red;
+	}
+	.before{
+		background-color: blue;
+	}
+	.append{
+		background-color: green;
+
+	}
+	.prepend{
+		background-color: cyan;
+	}
+	.attached{
+		background-color: gold;
+		display: inline-block;
+	}
+	}
+</style>
+	<!--DOM manipulation-->
+	<style type="text/css">
+		.selected{
+			text-decoration:underLine;
+			.golden-lin{
+				color: gold;
+			}
+		}
+	</style>
+<style type="text/css">
+	#ms{
+		fornt-size:20px;
+	}
+</style>	
+
+<style type="text/css">
+	.ms{
+		fornt-size:20px;
+		.middle{
+			color: light-blue;
+		}
+	}
+</style>
+</body>
+<script type="text/javascript" src="./jQuery.js"></script>
+<script type="text/javascript">
+	$("document").ready(function(){
+		$("body").append("<h1> I love jQuery</h1>");
+	});
+	//ready also function in Jquery
+	$(document).ready(function(){
+console.log("document is ready");
+	});
+	// calling  Id 
+	$(document).ready(function(){
+		$('#ms').text('document is ready change');
+	});
+
+//chaining functions
+$(document).ready(function(){
+	$('#ms').text('docments is changes ').css('color','green').css('fornt-size',300).fadeIn('slow');
+
+});
+//Qureying DOM
+// class selector
+//$(function(){$(".classanme").style("color","green");});
+// element selector
+//$(function(){
+	//$("h2").teext("jskk" ,edureka,);
+	//$("div.clsDemo").style("color","green");
+//}); text ,css :
+$(document).ready(function(){
+	$("h2").css('color','red');
+});
+//attribte selectors:a[]
+
+$(document).ready(function(){
+	$("a[target='_blank']").css('color','green');
+	$("a[target='_set']").css('color','yellow');
+	$("a[href='Yahoo.com']").text("Yahoo");
+
+
+});
+//universal selectors:* //is selected to very things
+//postion selector & psuedo-class selectors it work for first and last but not second and thrid
+$(document).ready(function(){
+	$('#Item-list > li:first').css('color','red');
+});
+// pseudo 
+
+$(document).ready(function(){
+		$("a:not([href='google.com'])").text("google");
+});
+//Traversing the DOM
+//1.find():this function finds all matching elements from the dom 
+$(document).ready(function(){
+	
+	$("button").click(function(){
+		$("#Item-list").find("a").css('color','green');
+	});
+
+});
+
+//children ()
+
+$(document).ready(function(){
+	
+	$("button").click(function(){
+		$("#first").children("a").css('color','blue');
+	});
+
+});
+//closes()
+$(document).ready(function(){
+	
+	$("button").click(function(){
+		$("#inside-div").closest("li").css('color','yellow');
+	});
+
+});
+//parent()
+$(document).ready(function(){
+	
+	$("button").click(function(){
+		$("#inside-div").parent().css('border','1px solid black');
+	});
+
+});
+//next()
+$(document).ready(function(){
+	
+	$("button").click(function(){
+		$("#first").next().css('border','1px solid black');
+	});
+
+});
+//prev()
+$(document).ready(function(){
+	
+	$("button").click(function(){
+		$("#first li:last").next().css('border','1px solid black');
+	});
+
+});
+//siblings()
+$(document).ready(function(){
+	
+	$("button").click(function(){
+		$("#first").siblings().css('border','1px solid black');
+	});
+
+});
+//first()
+$(document).ready(function(){
+	
+	$("button").click(function(){
+		$("li").first().css('border','1px solid black');
+	});
+
+});
+//last
+$(document).ready(function(){
+	
+	$("button").click(function(){
+		$("li").last().css('border','1px solid black');
+	});
+
+});
+// DOM manipulation 1.manipulate elements content 2.add/remove DOM elements3.modify an existing element 4.copy /clone an element 5.add/remove/modify elements attributes 
+//content manipulation >> text() >>html()>> valu()
+$(document).ready(function(){
+	$("button").click(function(){
+		var answer=$('#answer-box').val();
+		if(answer=='delhi'){
+			$('#result').text('your anwser is correct');
+		}
+			else{
+				$('#result').html('<span style="color:red"> your answer is incorrect</span>');
+				$('#answer').text('correct anwser is delhi');
+			}
+		
+	});
+
+});
+//adding and removing DOM elements 
+//creating Elements -$(<div></div>) 1.after() 2.befor() 3. append() 4.prepend() 5.remove()
+
+$(document).ready(function(){
+	$('.after').click(function(){
+		//adding more boxs(|||) 
+$('.after').append('<div class="color-box attached">Attached</div>');
+	});
+	//before
+	$('.before').click(function(){
+		//outside (--)
+		$('.before').before('<div class="color-box attached">attached</div>');
+	});
+	//append
+	$('.append').click(function(){
+		//
+		$('.append').append('<div class="color-box attached">attached</div>')
+	});
+	//prepend
+	$('.prepend').click(function(){
+		//
+		$('.prepend').prepend('<div class="color-box attached">attached</div>');
+	});
+});
+// modifying properties and Attributes 
+//attr()
+$(document).ready(function(){
+	$('#linkfix').click(function(){
+var targetval=	$('a').attr('target');
+if (targetval=='_self') {
+$('a').attr('target','_blank');
+}
+else{
+	console.log($('a').attr('target'));
+	}
+	});
+
+});
+//other attribute methods: .removeatr(name).hasclass(class).addclass(class).removeclass(class ).toggleclass(class).prop()..attr())
+$(document).ready(function(){
+$('#linkfix').click(function(){
+	$('a').removeAttr('id');//href//traget//id
+});
+});
+//hasclass
+$(document).ready(function(){
+$('#linkfix').click(function(){
+if(	$('a').hasclass('after')==true){
+	$('a').removeclass('after').addClass('golden-lin');
+}//href//traget//id
+
+});
+});
+//toggleclass
+
+$(document).ready(function(){
+$('#linkfix').click(function(){
+	$('a').toggleClass('after');
+});
+});
+
+//copying elements
+//clone(); //sending ,boolean 
+$(document).ready(function(){
+$('#linkfix').click(function(){
+	$('#master').clone().insertAfter('#clones');
+});
+});
+// iterating with .each()//$.each()
+
+var numlis=[1,2,3,4];
+$.each(numlis,function(index,value){
+	console.log(index,value);
+});
+// tages by using .Each()
+
+$('li').each(function(index,element){
+	console.log((element));
+});
+//or
+$('li').each(function(index,element){
+	console.log($(this).text());
+	});
+// jqurey filters:eq()
+$(document).ready(function(){
+	$('li').eq(5).toggleClass('golden-lin');
+});
+/*$(document).ready(function(){
+	$('li').Filter('.middle').toggleClass('golden-link');
+});*/
+//.has() and .not
+$(document).ready(function(){
+$('li').has('ul').css('background-color','lightblue');
+});
+//not
+$(document).ready(function(){
+$('li').not('.middle').css('background-color','lightblue');
+});
+//jqurey Data APIs :data()
+ $(document).ready(function(){
+$('#btn1').click(function(){
+	$("#dataelement").data({"cart":200,"iteams":3})
+
+});
+$('#btn2').click(function(){
+console.log($("#dataelement").data("cart"));
+console.log($("#dataelement").data("iteams"));
+});
+ });
+//JQurey Effects //.show()&.hide() //speed//callback
+//$(document).ready(function(){
+//$('#hidebox').click(function(){
+//	$('.color-box').hide(2000);
+//});
+
+//$('#showbox').click(function(){
+//$('.color-box').show(2000);
+//});
+//fading $ sliding methods: /.toggle()
+//$('#togglebox').click(function(){
+//	$('.color-box').toggle(500);
+//});
+//});
+
+//other function : >.fadeIn()>.fadeOut()>.fadeTo(speed,opacity,,callback)>.slidDown()>.slideUp()>.slideToggle()
+
+$(document).ready(function(){
+//$('#hidebox').click(function(){
+//	$('.color-box').fadeIn(2000);
+//});
+
+//$('#showbox').click(function(){
+//$('.color-box').fadeOut(2000);
+
+//});
+//fadeto()
+
+//$('#hidebox').click(function(){
+//$('.color-box').fadeTo(2000,8.5);
+
+//});
+//slideUp()and slideDown
+$('#hidebox').click(function(){
+	$('.color-box').slideUp(500);
+});
+
+$('#showbox').click(function(){
+$('.color-box').slideDown(500);
+
+});
+//JQurey Animate : .animate()
+$('#animatebox').click(function(){
+$('.color-box').animate({
+	'width':'278px',
+//	postion:'absolute',
+'marigin-top':'40px',
+//'display':'block',
+'opacity':0.2
+},1000);
+
+});
+//chaining Animations:
+//$('#mydiv').animate{top:50},1000).delay(1000).animate({left:200},1000)
+
+});
+//Jqurey form validation 
+//jqurey form selectors 1.textbox:$('input:text')/$('input[type=text]')
+//password :$('input:password')$('input:password').val();
+//textarea:$('textarea'):$('input:textarea').val();
+//radibuttons-$('input:radio'):$('input:radio[name=radiobutton-name]:checked').val();
+//checkBox:$('input:checkbox'):$('input:checkbox[name=checkboxname]').is(':checked', true);
+//Hidden:$('input:hidden'):$('input:hidden').val();
+//select (dropdown box):$('select':$('#dropdown-id').val();
+//submit button:$('input:submit')
+//rest button:$('input:rest')
+//regular expression:^-start of string .$end of string . .Any single charter .+one or more character .\ espace spacial charter.?zero or more charcters
+//https://regex101.com/
+
+//Event HAndling>binding event handlers: 
+$(document).ready(function(){
+$('#bind-exp').bind("click",function(){
+	//alert("the pragap was clicked");
+	console.log("the pragrap clicked");
+});
+});
+// mouseenter
+$(document).ready(function(){
+$('#bind-exp').bind("mouseenter mouseleave",function(){
+	//alert("the pragap was clicked");
+	console.log('the pragrap clicked',$(this).text());
+});
+});
+//mouseleave
+$(document).ready(function(){
+$('#bind-exp').bind("mouseleave",function(){
+	//alert("the pragap was clicked");
+	console.log('leaving your world');
+	//unbind();
+	//$(this).unbind('mouseenter');
+	$(this).unbind();
+});
+});
+//jqurey on()& off()
+$(document).ready(function(){
+$('#colorbox').on({mouseenter:function(){
+$('#message').text('you have enter the box');
+},
+mouseleave:function(){
+	$('#message').text('you have leave the box');
+
+}
+});
+});
+//Event Object 
+$('#colorbox').on('mouseenter mouseleave',function(event){
+	console.log(event);
+//console.log(event.type);
+//console.log(event.which);
+//console.log(event.traget);
+//console.log(event.pageX);
+//console.log(event.pageY);
+});
+//preventing the default action 
+//.preventDefault()
+$(document).ready(function(){
+	$('#target-link').on('click',function(event){
+event.preventDefault();
+	});
+});
+//.stopPropagation()
+$(document).ready(function(){
+$('#target-link').on('click',function(event){
+event.stopPropagation();
+	});
+
+});
+//connecting Events to run only once: .one()
+$(document).ready(function(){
+$('#target-link').one('click',function(event){
+console.log('you just clicked this after the first');
+$(this).click(function(){
+	console.log('you have clicked this befor ');
+});
+	});
+
+});
+// removing /disconnecting Events : .off();
+
+$(document).ready(function(){
+$('#target-link').off('click',function(event){
+console.log('you just clicked this off the first');
+$(this).click(function(){
+	console.log('you have clicked this befor off ');
+});
+	});
+
+});
+//Event trigger: .trigger()
+//$('#target-link').trigger("click")
+//console.log('you just clicked this trigger the first');
+//CUstom events 
+$(document).ready(function(){
+$('#colorbox').on('customEvent',function(event){
+	console.log('customEvent called');
+//console.log('run once');
+//$(#target-link).trigger('click');
+
+});
+$('#target-link').trigger('customEvent');
+});
+//Ajax
+//fortunarely ,jqury provides $.ajax() method that abstracts away painful browser differences .
+//methods :1.$.get(),2.$.getscript(),3.$.getjson,4.$.post,5.$().load()
+//1.get -2.post(sending to server)
+//data type :1.text :trasfers simple string
+//2.html:transfer block of html
+//3. script :to add a new script to pages 
+//4.json:transfer json formatted data ,which include string ,objects and arrays 
+//5.jsonp:used for json data from another domain
+//xml:trasfers data in custom xml schema
+//same -origin policy and jsonp:
+//to make ajax reqest from different domain we can use jsonp  page using <script>
+//$.ajax() method 
+//async -true /false :
+//cache: default is true for all datatype except "script " and jsonp
+//complete :success:
+//data :either string or object 
+//data type :data you expect form server 
+//error :callback function to run when request get an error //jsonpp; callback name to send in query string when making ajsonp request  deafulat is "callback" :
+//sucess: very thing is compteted 
+//timeout:specifies the time millisecond to wait and consider as the request is faailure 
+//type :request "post "or "Get".default is "Get"
+//url: this request url  mandatory :
+
+/*$('#btn3').click(function(){
+	$.ajax({
+url:'https://jsonbin.io/5dfe7e49ec09451045d6db0f',
+type:'Get',
+datatype:'json',
+timeout:'2500',
+success:function(result){
+	console.log('compete with success and data',result);
+	},
+error:function(result){
+	console.log('complete with eror');
+},
+complete:function(result){
+	console.log('complete');
+},
+	
+});
+//get();
+$.get('https://api.jsonbin.io/b/5dfe7e49ec09451045d6db0f',{},
+	function(){
+		console.log('request compteted');
+	},
+	datatype:'json'
+});
+*/
+//$.get()
+/*$('#btn3').click(function(){
+.get('https://api.jsonbin.io/b/5dfe7e49ec09451045d6db0f',{},
+	function(response){
+		console.log('request compteted');
+	},
+	'json'
+	});*/
+//$.getjson();/
+/*	$('#btn3').click(function(){
+.getJSON('https://api.jsonbin.io/b/5dfe7e49ec09451045d6db0f',{},
+	function(response){
+		console.log('Getjson using ');
+	},
+	
+	});*/
+	//.post()
+	/*$('#btn3').click(function(){
+.post('https://api.jsonbin.io/b/5dfe7e49ec09451045d6db0f',{},
+	function(response){
+		console.log('request compteted');
+	},
+	'json'
+	});*/
+
+//https://api.jquery.com/serialize
+//https://api.jquery.com/serilizeArrray
+//.map()
+var names={"molly","libby"};
+var exp=$.map(names,function(perName,perIndex){
+	return (perName.slipt(""));
+});
+console.log(exp);
+//$.trim():removes space staring and end  leading and traling whitespace 
+//$.inArray(): return the index value 
+var theArray={'A','B','C'};
+var indexofvalue=$.inArray('c',theArray);
+alert(indexofvalue);
+//$.isFunction(someValue):check 
+//$.isPlainobject(someValue)
+//$.isArray(someValue)
+//Deferred Object 
+//methods :1.resolve 2.reject
+//Ajax function might  took
+//inside of jquery code 
+function ajax(option){
+	var request=$.Deferred();
+	//make the request 
+	request.resolve(option.success);
+ request.reject(option.error);
+}
+ //promise 
+ //promise():methode 
+ //.ajax() method returns a promise ,
+ //Done() 2.fail() 3.always()
+ function ajax(option){
+	var request=$.Deferred();
+	//make the request 
+	request.resolve(option.success);
+ request.reject(option.error);
+ return request.promise();
+
+}
+//done() 2.fail() 3.always()
+var post=$.ajax({
+	url:"/echo/json/",
+	data:{json:JSON.stringify({FirstName:"sai",lastName:"vvvv"})},
+	type:"POST",
+});
+post.done(function(p){
+	alert(p.FirstName+"saved");
+});
+post.fail(function(){
+	alert("error");
+});
+post.always(function(){
+	alert("operation");
+});
+//caching ajax 
+var promise=$.post('/songs',{id:1}).promise();
+promise.done(callback);
+// caching 
+var cache={};
+function loadsong(id,callback){
+	if(!cache[id]){
+		cache[id]=$.post('/songs',{'id':id}).promise();
+	}
+	cache[id].done(callback);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</html>
+<!-- css Selectors-->
+<!--TagName selectors-->
+<!--Id selector-->
+<!--class selectors-->
+<!--Pseudo-class selectors-->
+<!--selectors based on relationships-->
+<!--Attribute selectors-->
+<!--Mulitiple selectors-->
+<!--The JQurey Object ($)-->
+<!--$(document)-- JQurey Object like array contains zero or more indexes  . object methodnlike 1.length 2.context 3.selector-- >
+<!--JQurey CDN & installation -->
+
