@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<button>submit</button>
+<!--stack dyanamic call function onclick()-->
+<p id="abc" onclick="color();">abd</p>
+<input type="text" name="Nams"></input>
+<form>
+	name:<input type="text" id ="name"></input><br>
+	phone:<input type="text" id="phno"></input><br>
+	<button onclick="validateform()">Submit</button>
+</form>
+
+</body>
+<script type="text/javascript">
+	var gendal;
+	gendal=2;
+	console.log(typeof gendal);
+	gendal="nari";
+	console.log(typeof gendal);
+	gendal='ch';
+	console.log(typeof gendal);
+	gendal=true;
+	console.log(typeof gendal);
+	gendal=[1,2,3,4]
+	console.log(gendal.length);
+	//or
+	var a=new Array(1,2,3,4)
+	console.log(a.length);
+	console.log("this" + "is hello world");
+	console.log(2+"hi");
+//var num1=prompt("Enter some value");
+//console.log(typeof num1);
+//console.log(parseInt(num1)+2);
+//alert("this is an alert");
+//<!--operator;-->
+console.log(1+2);
+var diff=3-2;
+console.log("diff"+diff);
+var div=10/2;
+console.log("div"+div);
+var mod =10%2;
+console.log("remder"+mod);
+ var mul=2*5;
+ console.log("multi"+mul);
+ // for loops and for in loop :
+ var subject=["maths","phy","chem"];
+ var marks=new Array();
+ var num;
+ for (var i = 0;i<subject.length;i++) {
+ num=parseFloat(prompt("enter marks for subject"+subject[i]));
+ marks[i]=num;
+ console.log(num);
+ }
+ for(m in marks){
+ 	console.log(marks[m]);
+ }
+ //whil loop 
+ /*var i=4;
+ while (i<8){
+ 	console.log(i);
+ 	i++;
+ }
+ do {
+console.log(i);
+ }while(i<10)*/
+//function :1,named function :2.anonymous function:3.self invoking function 4. constructor 
+//named function:
+function addnum(a,b){
+	console.log("function addnum is called ");
+	return a+b;
+
+}
+console.log(addnum(3,6));
+var sum=addnum(3,5);
+console.log(sum);
+// anonymous function :
+var add=function(a,b){
+	console.log("anonymous function is called");
+	return a+b;
+}
+add(2,3);
+setTimeout(add,3000);
+//setTImeout(function(){console.log("anonymous function is called");},3000);
+// constructor function :
+var addfun=new Function("a","b","console.log('in constructor function'); return a+b;");
+console.log(addfun(2,3));
+//self invoking function:
+(function(a,b){
+	console.log("self invoking function");
+	return a+b;
+})(2,6);//or (function(){ ,}());
+//calcuatingg the square of num:
+// named function 
+function ncal(a){
+	return a*a;
+}
+console.log("calcuatingg named function"+ncal(2));
+
+// anonymous function
+var dcal=function(b){
+	return b*b;
+}
+console.log("calling anonymous function:"+dcal(5));
+// new constructor 
+var acal=new Function("a","return a*a;");
+console.log("calling constructorfunction:"+acal(5));
+//self invoking 
+(function(a){console.log("calling self invoking function:"+a*a);
+	return a*a;})(3);
+	var ms=(function()
+	{
+	var count=0;
+	return function(){return count +=1;}
+		})();
+		 // objects:
+function create1(){
+var person=new Object();
+person.name="siva";
+person.age=19;
+person.phno=123;
+return person;
+}
+console.log(create1());
+//or
+function create2()
+{
+	var person={};
+	person.name="nai";
+	person.age=20;
+	person.phno=12222;
+	person.des="c#";
+	return person;
+}
+console.log(create2());
+//or 
+function create3(){
+	var person={name:"na",age:9,ds:"as"};
+	console.log(person.name+""+person.age+""+person.ds);
+	return person;
+
+}
+console.log(create3());
+
+//or
+function create4(){
+	var person={};
+	person['name']="gur";
+	person['age']=12;
+	return person;
+
+}
+console.log(create4());
+//object creation function
+function person(){
+	this.name="nnnn";
+	this.age=20;
+	this.ds="c#";
+}
+dx=new person();
+console.log(dx);
+var animal={
+	type:"invoking",
+	displayType:function(){
+		alert( "type is :"+this.type);
+	}
+}
+var cow =Object.create(animal);
+cow.type="something";
+cow.displayType();
+//object property Delection :delete:
+var trainer={
+	name:"abc",
+	age:12,
+	dm:"dss"
+}
+var property="";
+for(p in trainer){
+property+= p +": "
+}
+console.log("before"+ property);
+
+delete trainer.age;
+property="";
+for(p in trainer){
+property+= p +": "
+}
+console.log("after"+property);
+//Browse object model (BOM) 
+function windows(){
+var newWindow=window.open("http://www.google.com","newWindow","height=100,width=200");
+//newWindow.moveTo(200,150);
+newWindow.close();
+window.close();
+}
+//BOM -screen heigt ,width,colordepth, aviavable 
+//BOM -Navigator 
+function navigatorprop(){
+	document.write("</br>"+navigator.appCodeName);
+	document.write("</br> name"+navigator.appName);
+	document.write("</br> platform"+navigator.platform);
+	document.write("</br>cookie is enabled"+navigator.cookieEnabled);
+	document.write("</br> product"+navigator.product);
+}
+navigatorprop();
+//BOM Location object :
+function alocation(){
+	console.log("href of location:"+location.href);
+}
+alocation();
+// Document Object Model  :finding elements 
+// 1.document .getElementById(),2.
+// 1.document .getElementById(),3.document .getElementByTageName() ; .innerHTML=""
+document.getElementById('abc').innerHTML="ssss";
+//style changed 
+function color(){
+
+document.getElementById('abc').setAttribute("style","color:green");
+}
+// DOM Events :
+// mouse events {.mousedown .mouseup.click.dbclick.mousemove.mouseover.mousewheel.mouseout.contextmenu}
+//touch Events {.touchstart .touchmove.touchEnd.touchcancle}
+//keyboard  Events {.keydown .keypress.keyup}
+//form Events{.focus .blur .change .submit}
+//window Events {.scroll.resize.hashchange.load.unload}
+//Events
+document.getElementById('abc').addEventListener("click",color); 
+//Events
+function colormouseOver(){
+	document.getElementById('abc').setAttribute("style","color:blue");
+
+}
+//dynamic events mouseover 
+document.getElementById('abc').addEventListener("mouseover",colormouseOver);
+//form validations:
+function validateform(){
+	//check whether name is added or not 
+	var name=document.getElementById("name");
+	var phno=document.getElementById("phno");
+	if (name.value=="") {
+		alert("please Enter some value name");
+	}
+
+	if(!(isNan(name.value))){
+		alert("please Enter some value name");
+	}
+	if(isNan(phno.value)){
+		alert("please Enternum in phno");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
